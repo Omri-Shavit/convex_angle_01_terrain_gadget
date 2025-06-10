@@ -1,7 +1,9 @@
 # Arbitrary Convex Angle 0/1 Terrain Gadget
-[![Demo Video](https://www.youtube.com/watch?v=W_kZSaz0OZ4)
+<div align="center">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/W_kZSaz0OZ4" title="Demo Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
-This page is a proof of concept that you can generalize the 90 degree 0/1 terrain gadget to work for any convex angle $\alpha\in [0,\pi]$
+[This page](https://omri-shavit.github.io/convex_angle_01_terrain_gadget/) is a proof of concept that you can generalize the 90 degree 0/1 terrain gadget to work for any convex angle $\alpha\in [0,\pi]$
 
 ## Usage
 1. Adjust the angle ($\alpha$) and height parameters using their respective sliders

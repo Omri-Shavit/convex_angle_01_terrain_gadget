@@ -3,29 +3,29 @@
     "randomSeed": "56c961fe938406a0aea4b9b66f7f885b",
     "graph": {
         "viewport": {
-            "xmin": -0.5,
-            "ymin": -0.5,
-            "zmin": -1,
-            "xmax": 1.5,
-            "ymax": 1.5,
-            "zmax": 1
+            "xmin": -0.5843066718096988,
+            "ymin": -0.5843066718096988,
+            "zmin": -0.5843066718096988,
+            "xmax": 0.5843066718096988,
+            "ymax": 0.5843066718096988,
+            "zmax": 0.5843066718096988
         },
         "threeDMode": true,
         "worldRotation3D": [
-            -0.18317805747830002,
-            -0.9802863069819155,
-            -0.07405778556127765,
-            0.9088210939043423,
-            -0.19758227740301876,
-            0.3674308954494198,
-            -0.3748199815017906,
-            3.584200632976855e-15,
-            0.9270976116175731
+            -0.24024427483306085,
+            -0.9657078051796455,
+            -0.09844350372210814,
+            0.8935969262779989,
+            -0.25963134443889585,
+            0.36616403200124675,
+            -0.37916648290229504,
+            -2.2576808387871378e-14,
+            0.925328470459846
         ],
         "axis3D": [
-            0,
-            0,
-            -1.0000000000012037
+            -0.965707805188606,
+            -0.25963134444140396,
+            1.2108670865142224e-14
         ],
         "showPlane3D": false,
         "showNumbers3D": false,
@@ -33,19 +33,19 @@
         "showAxisLabels3D": false,
         "product": "graphing-3d",
         "__v12ViewportLatexStash": {
-            "xmin": "-0.5",
-            "xmax": "1.5",
-            "ymin": "-0.5",
-            "ymax": "1.5",
-            "zmin": "-1",
-            "zmax": "1"
+            "xmin": "-0.5843066718096988",
+            "xmax": "0.5843066718096988",
+            "ymin": "-0.5843066718096988",
+            "ymax": "0.5843066718096988",
+            "zmin": "-0.5843066718096988",
+            "zmax": "0.5843066718096988"
         }
     },
     "expressions": {
         "list": [
             {
                 "type": "expression",
-                "id": "alpha",
+                "id": "5",
                 "color": "#6042a6",
                 "latex": "\\alpha=1.5707963267948966",
                 "slider": {
@@ -58,7 +58,7 @@
             },
             {
                 "type": "expression",
-                "id": "height",
+                "id": "1",
                 "color": "#c74440",
                 "latex": "h=0.1767766952966369",
                 "slider": {
@@ -744,8 +744,7 @@
             {
                 "type": "folder",
                 "id": "464",
-                "title": "Folded form",
-                "collapsed": true
+                "title": "Folded form"
             },
             {
                 "type": "text",
@@ -758,7 +757,7 @@
                 "id": "433",
                 "folderId": "464",
                 "color": "#c74440",
-                "latex": "S_{7}=F_{ab}\\left(p_{3},p_{9},\\pi,F_{ab}\\left(p_{4},p_{8},\\pi,R_{7}\\right)\\right)",
+                "latex": "S_{7}=F_{ab}\\left(p_{3},p_{9},\\pi,F_{ab}\\left(p_{4},p_{8},\\pi,R_{7}\\right)\\right)+\\left(0,0,h\\right)-s_{5}",
                 "hidden": true
             },
             {
@@ -782,7 +781,7 @@
                 "id": "470",
                 "folderId": "464",
                 "color": "#2d70b3",
-                "latex": "S_{10}=F_{ab}\\left(p_{2},p_{10},\\pi,R_{10}\\right)",
+                "latex": "S_{10}=F_{ab}\\left(p_{2},p_{10},\\pi,R_{10}\\right)+\\left(0,0,h\\right)-s_{5}",
                 "hidden": true
             },
             {
@@ -806,7 +805,7 @@
                 "id": "426",
                 "folderId": "464",
                 "color": "#6042a6",
-                "latex": "S_{9}=F_{ab}\\left(p_{3},p_{9},\\pi,R_{9}\\right)",
+                "latex": "S_{9}=F_{ab}\\left(p_{3},p_{9},\\pi,R_{9}\\right)+\\left(0,0,h\\right)-s_{5}",
                 "hidden": true
             },
             {
@@ -830,7 +829,7 @@
                 "id": "476",
                 "folderId": "464",
                 "color": "#388c46",
-                "latex": "S_{8}=F_{ab}\\left(p_{2},p_{10},\\pi,F_{ab}\\left(p_{1},p_{11},\\pi,R_{8}\\right)\\right)",
+                "latex": "S_{8}=F_{ab}\\left(p_{2},p_{10},\\pi,F_{ab}\\left(p_{1},p_{11},\\pi,R_{8}\\right)\\right)+\\left(0,0,h\\right)-s_{5}",
                 "hidden": true
             },
             {
@@ -862,7 +861,7 @@
                 "id": "495",
                 "folderId": "464",
                 "color": "#aaaaaa",
-                "latex": "S_{5}=s_{5}-p_{5}+F_{ab}\\left(p_{5},p_{6},\\frac{3\\pi}{2},R_{5}\\right)",
+                "latex": "S_{5}=s_{5}-p_{5}+F_{ab}\\left(p_{5},p_{6},\\frac{3\\pi}{2},R_{5}\\right)+\\left(0,0,h\\right)-s_{5}",
                 "hidden": true
             },
             {
@@ -886,7 +885,7 @@
                 "id": "497",
                 "folderId": "464",
                 "color": "#2d70b3",
-                "latex": "S_{6}=s_{5}-p_{5}+F_{ab}\\left(p_{5},p_{13},\\frac{\\pi}{2},R_{6}\\right)",
+                "latex": "S_{6}=s_{5}-p_{5}+F_{ab}\\left(p_{5},p_{13},\\frac{\\pi}{2},R_{6}\\right)+\\left(0,0,h\\right)-s_{5}",
                 "hidden": true
             },
             {
@@ -910,7 +909,7 @@
                 "id": "498",
                 "folderId": "464",
                 "color": "#388c46",
-                "latex": "S_{4}=s_{5}-p_{5}+R_{4}",
+                "latex": "S_{4}=s_{5}-p_{5}+R_{4}+\\left(0,0,h\\right)-s_{5}",
                 "hidden": true
             },
             {
@@ -940,7 +939,7 @@
                 "id": "500",
                 "folderId": "464",
                 "color": "#aaaaaa",
-                "latex": "S_{11}=R_{11}",
+                "latex": "S_{11}=R_{11}+\\left(0,0,h\\right)-s_{5}",
                 "hidden": true
             },
             {
@@ -964,7 +963,7 @@
                 "id": "509",
                 "folderId": "464",
                 "color": "#388c46",
-                "latex": "S_{1}=\\left[s_{5},p_{2},p_{3}\\right]",
+                "latex": "S_{1}=\\left[s_{5},p_{2},p_{3}\\right]+\\left(0,0,h\\right)-s_{5}",
                 "hidden": true
             },
             {

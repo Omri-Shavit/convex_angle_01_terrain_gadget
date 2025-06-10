@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <title>Convex Angle 0/1 Terrain Gadget</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Convex Angle 0/1 Terrain Gadget</h1>
+        
+        <div class="calculators-container">
+            <div id="creasePatternCalculator" class="calculator"></div>
+            <div id="foldedModelCalculator" class="calculator"></div>
+        </div>
+        
+        <div class="controls">
+            <div class="slider-container">
+                <span class="slider-label">Angle &alpha;:</span>
+                <input type="range" id="angleSlider" class="slider" min="0" max="180" step="0.001" value="90.000">
+                <span class="slider-value" id="angleSliderValue">90.000&deg;</span>
+            </div>
+            
+            <div class="slider-container">
+                <span class="slider-label">height:</span>
+                <input type="range" id="heightSlider" class="slider" min="0.001" max="0.461" step="0.001" value="0.177">
+                <span class="slider-value" id="heightSliderValue">0.177</span>
+            </div>
+            
+            <div class="buttons-container">
+                <button id="downloadFoldBtn" class="btn btn-primary">
+                    <i class="fa-solid fa-circle-down"></i>
+                    Download .fold file
+                </button>
+                <button id="simulateFoldBtn" class="btn btn-primary">
+                    <i class="fa-solid fa-microchip"></i>
+                    Simulate Folding
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Origami Simulator -->
+    <div id="origamiModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>
+                    <a href="https://origamisimulator.org/" target="_blank">
+                        Origami Simulator</a> by 
+                    <a href="https://www.amandaghassaei.com/" target="_blank">
+                        Amanda Ghassaei</a> et al.
+                </h2>
+                <span class="close-btn" id="closeModal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <iframe id="origamiIframe" src="" width="100%" height="600" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="copyright">
+        &copy; 2025 <a href="https://github.com/Omri-Shavit/" target="_blank">
+            Omri Shavit
+        </a>
+    </footer>
+
+    <!-- Desmos API -->
+    <script src="https://www.desmos.com/api/v1.11/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+    <!-- Main code -->
+    <script src="main.js"></script>
+</body>
+</html> 

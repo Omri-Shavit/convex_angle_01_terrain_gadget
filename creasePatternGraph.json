@@ -1,0 +1,833 @@
+{
+    "version": 11,
+    "randomSeed": "80efbd3fc011d720c5736f26e088dcb4",
+    "graph": {
+        "viewport": {
+            "xmin": -0.11224208046284789,
+            "ymin": -0.043880718558606424,
+            "xmax": 1.1177400854212494,
+            "ymax": 1.0327993223022558
+        },
+        "showGrid": false,
+        "showXAxis": false,
+        "showYAxis": false,
+        "__v12ViewportLatexStash": {
+            "xmin": "-0.11224208046284789",
+            "xmax": "1.1177400854212494",
+            "ymin": "-0.043880718558606424",
+            "ymax": "1.0327993223022558"
+        }
+    },
+    "expressions": {
+        "list": [
+            {
+                "type": "expression",
+                "id": "alpha",
+                "color": "#6042a6",
+                "latex": "\\alpha=1.5707963267948966",
+                "slider": {
+                    "hardMin": true,
+                    "hardMax": true,
+                    "min": "0",
+                    "max": "\\pi"
+                }
+            },
+            {
+                "type": "expression",
+                "id": "height",
+                "color": "#000000",
+                "latex": "h=0.175",
+                "hidden": true,
+                "slider": {
+                    "hardMin": true,
+                    "hardMax": true,
+                    "min": "0",
+                    "max": "\\left(1-2\\cdot0.01\\right)\\cdot\\frac{\\sin\\left(\\frac{\\alpha}{2}\\right)}{1+\\sin\\left(\\frac{\\alpha}{2}\\right)^{2}}"
+                }
+            },
+            {
+                "type": "expression",
+                "id": "565",
+                "color": "#c74440",
+                "latex": "\\alpha\\to\\frac{\\pi}{2}"
+            },
+            {
+                "type": "expression",
+                "id": "677",
+                "color": "#c74440",
+                "latex": "\\left(1-2\\cdot0.01\\right)\\cdot\\frac{\\sin\\left(\\frac{\\alpha}{2}\\right)}{1+\\sin\\left(\\frac{\\alpha}{2}\\right)^{2}}"
+            },
+            {
+                "type": "folder",
+                "id": "323",
+                "title": "points of interest",
+                "hidden": true,
+                "collapsed": true
+            },
+            {
+                "type": "expression",
+                "id": "282",
+                "folderId": "323",
+                "color": "#2d70b3",
+                "latex": "p_{1}=\\left(\\frac{1}{2}-h\\cos\\left(\\frac{\\alpha}{2}\\right),\\frac{1}{2}-h\\sin\\left(\\frac{\\alpha}{2}\\right)\\right)",
+                "showLabel": true,
+                "label": "p1",
+                "dragMode": "NONE"
+            },
+            {
+                "type": "expression",
+                "id": "310",
+                "folderId": "323",
+                "color": "#6042a6",
+                "latex": "p_{2}=\\left(\\frac{1}{2}-\\frac{1}{2}h\\cos\\left(\\frac{\\alpha}{2}\\right),\\frac{1}{2}-\\frac{1}{2}h\\left(\\csc\\left(\\frac{\\alpha}{2}\\right)+\\sin\\left(\\frac{\\alpha}{2}\\right)\\right)\\right)",
+                "showLabel": true,
+                "label": "p2",
+                "dragMode": "NONE"
+            },
+            {
+                "type": "expression",
+                "id": "306",
+                "folderId": "323",
+                "color": "#000000",
+                "latex": "p_{3}=\\left(\\frac{1}{2}+\\frac{1}{2}h\\cos\\left(\\frac{\\alpha}{2}\\right),\\frac{1}{2}-\\frac{1}{2}h\\left(\\csc\\left(\\frac{\\alpha}{2}\\right)+\\sin\\left(\\frac{\\alpha}{2}\\right)\\right)\\right)",
+                "showLabel": true,
+                "label": "P3",
+                "dragMode": "NONE"
+            },
+            {
+                "type": "expression",
+                "id": "265",
+                "folderId": "323",
+                "color": "#388c46",
+                "latex": "p_{4}=\\left(\\frac{1}{2}+h\\cos\\left(\\frac{\\alpha}{2}\\right),\\frac{1}{2}-h\\sin\\left(\\frac{\\alpha}{2}\\right)\\right)",
+                "showLabel": true,
+                "label": "P4",
+                "dragMode": "NONE"
+            },
+            {
+                "type": "expression",
+                "id": "248",
+                "folderId": "323",
+                "color": "#2d70b3",
+                "latex": "p_{5}=\\left(\\frac{1}{2},\\frac{1}{2}\\right)",
+                "showLabel": true,
+                "label": "P5"
+            },
+            {
+                "type": "expression",
+                "id": "324",
+                "folderId": "323",
+                "color": "#388c46",
+                "latex": "p_{6}=\\left\\{\\alpha\\le\\frac{\\pi}{2}:\\ \\left(\\frac{1}{2}\\tan\\left(\\frac{\\alpha}{2}\\right)+\\frac{1}{2},1\\right),\\left(1,\\frac{1}{2}\\cot\\left(\\frac{\\alpha}{2}\\right)+\\frac{1}{2}\\right)\\right\\}",
+                "showLabel": true,
+                "label": "p6"
+            },
+            {
+                "type": "expression",
+                "id": "330",
+                "folderId": "323",
+                "color": "#6042a6",
+                "latex": "p_{7}=\\left\\{\\cos\\left(\\frac{\\alpha}{2}\\right)-\\sin\\left(\\frac{\\alpha}{2}\\right)\\le2h:\\left(1,\\frac{1}{2}\\cot\\left(\\frac{\\alpha}{2}\\right)+\\frac{1}{2}-h\\cdot\\csc\\left(\\frac{\\alpha}{2}\\right)\\right),\\left(\\frac{1}{2}+h\\sec\\left(\\frac{\\alpha}{2}\\right)+\\frac{1}{2}\\tan\\left(\\frac{\\alpha}{2}\\right),1\\right)\\right\\}",
+                "showLabel": true,
+                "label": "p7"
+            },
+            {
+                "type": "expression",
+                "id": "334",
+                "folderId": "323",
+                "color": "#388c46",
+                "latex": "p_{8}=\\left\\{\\alpha\\le\\frac{\\pi}{2}:\\left(1,\\frac{1}{2}-\\frac{1}{2}\\tan\\left(\\frac{\\alpha}{2}\\right)\\right),\\left(\\frac{1}{2}\\cot\\left(\\frac{\\alpha}{2}\\right)+\\frac{1}{2},0\\right)\\right\\}",
+                "showLabel": true,
+                "label": "p8"
+            },
+            {
+                "type": "expression",
+                "id": "337",
+                "folderId": "323",
+                "color": "#c74440",
+                "latex": "p_{9}=\\left\\{\\cos\\left(\\frac{\\alpha}{2}\\right)+\\sin\\left(\\frac{\\alpha}{2}\\right)-h\\ge\\sec\\left(\\frac{\\alpha}{2}\\right):\\left(1,-\\frac{1}{2}\\tan\\left(\\frac{\\alpha}{2}\\right)+\\frac{1}{2}-\\frac{1}{2}h\\csc\\left(\\frac{\\alpha}{2}\\right)\\right),\\left(\\frac{1}{2}+\\frac{1}{2}\\cot\\left(\\frac{\\alpha}{2}\\right)-\\frac{1}{2}h\\frac{\\cos\\left(\\frac{\\alpha}{2}\\right)}{\\sin\\left(\\frac{\\alpha}{2}\\right)^{2}},0\\right)\\right\\}",
+                "showLabel": true,
+                "label": "p9"
+            },
+            {
+                "type": "expression",
+                "id": "338",
+                "folderId": "323",
+                "color": "#2d70b3",
+                "latex": "p_{10}=\\left\\{\\cos\\left(\\frac{\\alpha}{2}\\right)+\\sin\\left(\\frac{\\alpha}{2}\\right)-h\\ge\\sec\\left(\\frac{\\alpha}{2}\\right):\\left(0,-\\frac{1}{2}\\tan\\left(\\frac{\\alpha}{2}\\right)+\\frac{1}{2}-\\frac{1}{2}h\\csc\\left(\\frac{\\alpha}{2}\\right)\\right),\\left(\\frac{1}{2}-\\frac{1}{2}\\cot\\left(\\frac{\\alpha}{2}\\right)+\\frac{1}{2}h\\frac{\\cos\\left(\\frac{\\alpha}{2}\\right)}{\\sin\\left(\\frac{\\alpha}{2}\\right)^{2}},0\\right)\\right\\}",
+                "showLabel": true,
+                "label": "p10"
+            },
+            {
+                "type": "expression",
+                "id": "339",
+                "folderId": "323",
+                "color": "#388c46",
+                "latex": "p_{11}=\\left\\{\\alpha\\le\\frac{\\pi}{2}:\\left(0,\\frac{1}{2}-\\frac{1}{2}\\tan\\left(\\frac{\\alpha}{2}\\right)\\right),\\left(\\frac{1}{2}-\\frac{1}{2}\\cot\\left(\\frac{\\alpha}{2}\\right),0\\right)\\right\\}",
+                "showLabel": true,
+                "label": "p11"
+            },
+            {
+                "type": "expression",
+                "id": "341",
+                "folderId": "323",
+                "color": "#000000",
+                "latex": "p_{12}=\\left\\{\\cos\\left(\\frac{\\alpha}{2}\\right)-\\sin\\left(\\frac{\\alpha}{2}\\right)\\le2h:\\left(0,\\frac{1}{2}\\cot\\left(\\frac{\\alpha}{2}\\right)+\\frac{1}{2}-h\\cdot\\csc\\left(\\frac{\\alpha}{2}\\right)\\right),\\left(\\frac{1}{2}-h\\sec\\left(\\frac{\\alpha}{2}\\right)-\\frac{1}{2}\\tan\\left(\\frac{\\alpha}{2}\\right),1\\right)\\right\\}",
+                "showLabel": true,
+                "label": "p12"
+            },
+            {
+                "type": "expression",
+                "id": "342",
+                "folderId": "323",
+                "color": "#c74440",
+                "latex": "p_{13}=\\left\\{\\alpha\\le\\frac{\\pi}{2}:\\ \\left(\\frac{1}{2}-\\frac{1}{2}\\tan\\left(\\frac{\\alpha}{2}\\right),1\\right),\\left(0,\\frac{1}{2}\\cot\\left(\\frac{\\alpha}{2}\\right)+\\frac{1}{2}\\right)\\right\\}",
+                "showLabel": true,
+                "label": "p13"
+            },
+            {
+                "type": "expression",
+                "id": "377",
+                "folderId": "323",
+                "color": "#000000",
+                "latex": "b_{1}=\\left(0,1\\right)",
+                "showLabel": true,
+                "label": "b1",
+                "dragMode": "NONE",
+                "labelOrientation": "above_left"
+            },
+            {
+                "type": "expression",
+                "id": "378",
+                "folderId": "323",
+                "color": "#000000",
+                "latex": "b_{2}=\\left(1,1\\right)",
+                "showLabel": true,
+                "label": "b2",
+                "dragMode": "NONE",
+                "labelOrientation": "above_right"
+            },
+            {
+                "type": "expression",
+                "id": "380",
+                "folderId": "323",
+                "color": "#000000",
+                "latex": "b_{3}=\\left(1,0\\right)",
+                "showLabel": true,
+                "label": "b3",
+                "dragMode": "NONE",
+                "labelOrientation": "below_right"
+            },
+            {
+                "type": "expression",
+                "id": "381",
+                "folderId": "323",
+                "color": "#000000",
+                "latex": "b_{4}=\\left(0,0\\right)",
+                "showLabel": true,
+                "label": "b4",
+                "dragMode": "NONE",
+                "labelOrientation": "below_left"
+            },
+            {
+                "type": "folder",
+                "id": "374",
+                "title": "crease lines / fold angles",
+                "collapsed": true
+            },
+            {
+                "type": "expression",
+                "id": "382",
+                "folderId": "374",
+                "color": "#c74440",
+                "latex": "\\left(1-t\\right)p_{8}+tp_{4}"
+            },
+            {
+                "type": "expression",
+                "id": "573",
+                "folderId": "374",
+                "color": "#6042a6",
+                "latex": "180"
+            },
+            {
+                "type": "expression",
+                "id": "574",
+                "folderId": "374",
+                "color": "#000000"
+            },
+            {
+                "type": "expression",
+                "id": "383",
+                "folderId": "374",
+                "color": "#c74440",
+                "latex": "\\left(1-t\\right)p_{4}+tp_{5}"
+            },
+            {
+                "type": "expression",
+                "id": "576",
+                "folderId": "374",
+                "color": "#2d70b3",
+                "latex": "90"
+            },
+            {
+                "type": "expression",
+                "id": "575",
+                "folderId": "374",
+                "color": "#c74440"
+            },
+            {
+                "type": "expression",
+                "id": "312",
+                "folderId": "374",
+                "color": "#c74440",
+                "latex": "\\left(1-t\\right)p_{4}+tp_{3}"
+            },
+            {
+                "type": "expression",
+                "id": "577",
+                "folderId": "374",
+                "color": "#388c46",
+                "latex": "90"
+            },
+            {
+                "type": "expression",
+                "id": "578",
+                "folderId": "374",
+                "color": "#6042a6"
+            },
+            {
+                "type": "expression",
+                "id": "386",
+                "folderId": "374",
+                "color": "#c74440",
+                "latex": "\\left(1-t\\right)p_{11}+tp_{1}"
+            },
+            {
+                "type": "expression",
+                "id": "579",
+                "folderId": "374",
+                "color": "#000000",
+                "latex": "180"
+            },
+            {
+                "type": "expression",
+                "id": "580",
+                "folderId": "374",
+                "color": "#c74440"
+            },
+            {
+                "type": "expression",
+                "id": "387",
+                "folderId": "374",
+                "color": "#c74440",
+                "latex": "\\left(1-t\\right)p_{1}+tp_{5}"
+            },
+            {
+                "type": "expression",
+                "id": "582",
+                "folderId": "374",
+                "color": "#388c46",
+                "latex": "180"
+            },
+            {
+                "type": "expression",
+                "id": "583",
+                "folderId": "374",
+                "color": "#6042a6"
+            },
+            {
+                "type": "expression",
+                "id": "388",
+                "folderId": "374",
+                "color": "#2d70b3",
+                "latex": "\\left(1-t\\right)p_{4}+tp_{7}"
+            },
+            {
+                "type": "expression",
+                "id": "584",
+                "folderId": "374",
+                "color": "#000000",
+                "latex": "90"
+            },
+            {
+                "type": "expression",
+                "id": "585",
+                "folderId": "374",
+                "color": "#c74440"
+            },
+            {
+                "type": "expression",
+                "id": "390",
+                "folderId": "374",
+                "color": "#c74440",
+                "latex": "\\left(1-t\\right)p_{13}+tp_{5}"
+            },
+            {
+                "type": "expression",
+                "id": "586",
+                "folderId": "374",
+                "color": "#2d70b3",
+                "latex": "90"
+            },
+            {
+                "type": "expression",
+                "id": "587",
+                "folderId": "374",
+                "color": "#388c46"
+            },
+            {
+                "type": "expression",
+                "id": "391",
+                "folderId": "374",
+                "color": "#c74440",
+                "latex": "\\left(1-t\\right)p_{6}+tp_{5}"
+            },
+            {
+                "type": "expression",
+                "id": "588",
+                "folderId": "374",
+                "color": "#6042a6",
+                "latex": "90"
+            },
+            {
+                "type": "expression",
+                "id": "571",
+                "folderId": "374",
+                "color": "#2d70b3"
+            },
+            {
+                "type": "expression",
+                "id": "392",
+                "folderId": "374",
+                "color": "#2d70b3",
+                "latex": "\\left(1-t\\right)p_{2}+tp_{3}"
+            },
+            {
+                "type": "expression",
+                "id": "566",
+                "folderId": "374",
+                "color": "#2d70b3",
+                "latex": "180-\\frac{180}{\\pi}\\arctan\\left(\\frac{2\\sin\\left(\\frac{\\alpha}{2}\\right)}{\\cos\\left(\\frac{\\alpha}{2}\\right)^{2}}\\right)"
+            },
+            {
+                "type": "expression",
+                "id": "572",
+                "folderId": "374",
+                "color": "#388c46"
+            },
+            {
+                "type": "expression",
+                "id": "568",
+                "folderId": "374",
+                "color": "#2d70b3",
+                "latex": "\\left(1-t\\right)p_{3}+tp_{9}"
+            },
+            {
+                "type": "expression",
+                "id": "569",
+                "folderId": "374",
+                "color": "#000000",
+                "latex": "180"
+            },
+            {
+                "type": "expression",
+                "id": "589",
+                "folderId": "374",
+                "color": "#000000"
+            },
+            {
+                "type": "expression",
+                "id": "315",
+                "folderId": "374",
+                "color": "#2d70b3",
+                "latex": "\\left(1-t\\right)p_{2}+tp_{10}"
+            },
+            {
+                "type": "expression",
+                "id": "590",
+                "folderId": "374",
+                "color": "#c74440",
+                "latex": "180"
+            },
+            {
+                "type": "expression",
+                "id": "591",
+                "folderId": "374",
+                "color": "#2d70b3"
+            },
+            {
+                "type": "expression",
+                "id": "281",
+                "folderId": "374",
+                "color": "#2d70b3",
+                "latex": "\\left(1-t\\right)p_{1}+tp_{12}"
+            },
+            {
+                "type": "expression",
+                "id": "592",
+                "folderId": "374",
+                "color": "#388c46",
+                "latex": "90"
+            },
+            {
+                "type": "expression",
+                "id": "593",
+                "folderId": "374",
+                "color": "#6042a6"
+            },
+            {
+                "type": "expression",
+                "id": "317",
+                "folderId": "374",
+                "color": "#c74440",
+                "latex": "\\left(1-t\\right)p_{1}+tp_{2}"
+            },
+            {
+                "type": "expression",
+                "id": "594",
+                "folderId": "374",
+                "color": "#000000",
+                "latex": "90"
+            },
+            {
+                "type": "expression",
+                "id": "595",
+                "folderId": "374",
+                "color": "#c74440"
+            },
+            {
+                "type": "expression",
+                "id": "319",
+                "folderId": "374",
+                "color": "#2d70b3",
+                "latex": "\\left(1-t\\right)p_{5}+tp_{2}"
+            },
+            {
+                "type": "expression",
+                "id": "605",
+                "folderId": "374",
+                "color": "#6042a6",
+                "latex": "\\frac{180}{\\pi}\\arcsin\\left(\\frac{4\\sin\\left(\\frac{\\alpha}{2}\\right)^{2}}{3-\\cos\\left(\\alpha\\right)}\\right)+90"
+            },
+            {
+                "type": "expression",
+                "id": "598",
+                "folderId": "374",
+                "color": "#388c46"
+            },
+            {
+                "type": "expression",
+                "id": "320",
+                "folderId": "374",
+                "color": "#2d70b3",
+                "latex": "\\left(1-t\\right)p_{5}+tp_{3}"
+            },
+            {
+                "type": "expression",
+                "id": "676",
+                "folderId": "374",
+                "color": "#000000",
+                "latex": "\\frac{180}{\\pi}\\arcsin\\left(\\frac{4\\sin\\left(\\frac{\\alpha}{2}\\right)^{2}}{3-\\cos\\left(\\alpha\\right)}\\right)+90"
+            },
+            {
+                "type": "folder",
+                "id": "345",
+                "title": "calculate fold angles",
+                "collapsed": true
+            },
+            {
+                "type": "expression",
+                "id": "355",
+                "folderId": "345",
+                "color": "#388c46",
+                "latex": "\\left(\\frac{1}{2},-\\tan\\left(\\frac{\\pi-\\alpha}{2}\\right)\\left(\\frac{1}{2}-\\left(\\frac{1}{2}-h\\cdot\\sin\\left(\\frac{\\pi-\\alpha}{2}\\right)\\right)\\right)+\\frac{1}{2}-h\\cdot\\cos\\left(\\frac{\\pi-\\alpha}{2}\\right)\\right)",
+                "hidden": true
+            },
+            {
+                "type": "expression",
+                "id": "357",
+                "folderId": "345",
+                "color": "#000000",
+                "latex": "d_{1}=\\frac{1}{2}-\\left(\\frac{1}{2}-\\frac{1}{2}h\\cdot\\left(\\frac{1}{\\sin\\left(\\frac{\\alpha}{2}\\right)}+\\cos\\left(\\frac{\\pi-\\alpha}{2}\\right)\\right)\\right)"
+            },
+            {
+                "type": "expression",
+                "id": "556",
+                "folderId": "345",
+                "color": "#2d70b3",
+                "latex": "\\left(1-t\\right)p_{temp}+t\\left(p_{temp}+\\left(0,d_{2}\\right)\\right)"
+            },
+            {
+                "type": "expression",
+                "id": "356",
+                "folderId": "345",
+                "color": "#6042a6",
+                "latex": "d_{2}=\\frac{1}{2}-\\frac{1}{2}h\\cdot\\left(\\frac{1}{\\sin\\left(\\frac{\\alpha}{2}\\right)}+\\cos\\left(\\frac{\\pi-\\alpha}{2}\\right)\\right)-\\left(-\\tan\\left(\\frac{\\pi-\\alpha}{2}\\right)\\left(\\frac{1}{2}-\\left(\\frac{1}{2}-h\\cdot\\sin\\left(\\frac{\\pi-\\alpha}{2}\\right)\\right)\\right)+\\frac{1}{2}-h\\cdot\\cos\\left(\\frac{\\pi-\\alpha}{2}\\right)\\right)"
+            },
+            {
+                "type": "expression",
+                "id": "559",
+                "folderId": "345",
+                "color": "#000000",
+                "latex": "\\frac{1}{2}\\left(\\csc\\left(\\frac{\\alpha}{2}\\right)-\\sin\\left(\\frac{\\alpha}{2}\\right)\\right)h"
+            },
+            {
+                "type": "expression",
+                "id": "346",
+                "folderId": "345",
+                "color": "#6042a6",
+                "latex": "\\frac{180}{\\pi}\\left(\\frac{1}{2}-\\frac{1}{2}h\\cdot\\left(\\frac{1}{\\cos\\left(\\frac{\\alpha}{2}\\right)}+\\cos\\left(\\frac{\\alpha}{2}\\right)\\right)\\right)"
+            },
+            {
+                "type": "expression",
+                "id": "558",
+                "folderId": "345",
+                "color": "#6042a6",
+                "latex": "\\arctan\\left(\\frac{h}{d_{2}}\\right)"
+            },
+            {
+                "type": "expression",
+                "id": "560",
+                "folderId": "345",
+                "color": "#c74440",
+                "latex": "180-\\frac{180}{\\pi}\\arctan\\left(\\frac{2\\sin\\left(\\frac{\\alpha}{2}\\right)}{\\cos\\left(\\frac{\\alpha}{2}\\right)^{2}}\\right)"
+            },
+            {
+                "type": "folder",
+                "id": "365",
+                "title": "paper boundary edges",
+                "collapsed": true
+            },
+            {
+                "type": "expression",
+                "id": "445",
+                "folderId": "365",
+                "color": "#000000",
+                "latex": "\\left(1-t\\right)\\left\\{\\frac{\\pi}{2}\\le\\alpha\\le\\pi:b_{1},p_{13}\\right\\}+t\\left\\{\\frac{\\pi}{2}\\le\\alpha\\le\\pi:b_{2},p_{6}\\right\\}"
+            },
+            {
+                "type": "expression",
+                "id": "446",
+                "folderId": "365",
+                "color": "#000000",
+                "latex": "\\left(1-t\\right)\\left\\{\\frac{\\pi}{2}\\le\\alpha\\le\\pi:b_{2},p_{6}\\right\\}+t\\left\\{\\cos\\left(\\frac{\\alpha}{2}\\right)-\\sin\\left(\\frac{\\alpha}{2}\\right)\\le2h:\\left\\{\\frac{\\pi}{2}\\le\\alpha\\le\\pi:\\ p_{6},\\ b_{2}\\right\\},p_{7}\\right\\}"
+            },
+            {
+                "type": "expression",
+                "id": "491",
+                "folderId": "365",
+                "color": "#000000",
+                "latex": "\\left(1-t\\right)\\left\\{\\cos\\left(\\frac{\\alpha}{2}\\right)-\\sin\\left(\\frac{\\alpha}{2}\\right)\\le2h:\\left\\{\\frac{\\pi}{2}\\le\\alpha\\le\\pi:\\ p_{6},\\ b_{2}\\right\\},p_{7}\\right\\}+t\\left\\{\\cos\\left(\\frac{\\alpha}{2}\\right)-\\sin\\left(\\frac{\\alpha}{2}\\right)\\le2h:p_{7},b_{2}\\right\\}"
+            },
+            {
+                "type": "expression",
+                "id": "402",
+                "folderId": "365",
+                "color": "#000000",
+                "latex": "\\left(1-t\\right)\\left\\{\\cos\\left(\\frac{\\alpha}{2}\\right)-\\sin\\left(\\frac{\\alpha}{2}\\right)\\le2h:p_{7},b_{2}\\right\\}+t\\left\\{\\sin\\left(\\frac{\\alpha}{2}\\right)\\le\\cos\\left(\\frac{\\alpha}{2}\\right):p_{8},b_{3}\\right\\}",
+                "showLabel": true,
+                "label": "epic"
+            },
+            {
+                "type": "expression",
+                "id": "511",
+                "folderId": "365",
+                "color": "#000000",
+                "latex": "\\left(1-t\\right)\\left\\{\\sin\\left(\\frac{\\alpha}{2}\\right)\\le\\cos\\left(\\frac{\\alpha}{2}\\right):p_{8},b_{3}\\right\\}+t\\left\\{\\cos\\left(\\frac{\\alpha}{2}\\right)+\\sin\\left(\\frac{\\alpha}{2}\\right)-h\\ge\\sec\\left(\\frac{\\alpha}{2}\\right):p_{9},\\left\\{\\sin\\left(\\frac{\\alpha}{2}\\right)\\le\\cos\\left(\\frac{\\alpha}{2}\\right):b_{3},p_{8}\\right\\}\\right\\}"
+            },
+            {
+                "type": "expression",
+                "id": "519",
+                "folderId": "365",
+                "color": "#000000",
+                "latex": "\\left(1-t\\right)\\left\\{\\cos\\left(\\frac{\\alpha}{2}\\right)+\\sin\\left(\\frac{\\alpha}{2}\\right)-h\\ge\\sec\\left(\\frac{\\alpha}{2}\\right):p_{9},\\left\\{\\sin\\left(\\frac{\\alpha}{2}\\right)\\le\\cos\\left(\\frac{\\alpha}{2}\\right):b_{3},p_{8}\\right\\}\\right\\}+t\\left\\{\\cos\\left(\\frac{\\alpha}{2}\\right)+\\sin\\left(\\frac{\\alpha}{2}\\right)-h\\ge\\sec\\left(\\frac{\\alpha}{2}\\right):b_{3},p_{9}\\right\\}"
+            },
+            {
+                "type": "expression",
+                "id": "521",
+                "folderId": "365",
+                "color": "#000000",
+                "latex": "\\left(1-t\\right)\\left\\{\\cos\\left(\\frac{\\alpha}{2}\\right)+\\sin\\left(\\frac{\\alpha}{2}\\right)-h\\ge\\sec\\left(\\frac{\\alpha}{2}\\right):b_{3},p_{9}\\right\\}+t\\left\\{\\cos\\left(\\frac{\\alpha}{2}\\right)+\\sin\\left(\\frac{\\alpha}{2}\\right)-h\\ge\\sec\\left(\\frac{\\alpha}{2}\\right):b_{4},p_{10}\\right\\}"
+            },
+            {
+                "type": "expression",
+                "id": "528",
+                "folderId": "365",
+                "color": "#000000",
+                "latex": "\\left(1-t\\right)\\left\\{\\cos\\left(\\frac{\\alpha}{2}\\right)+\\sin\\left(\\frac{\\alpha}{2}\\right)-h\\ge\\sec\\left(\\frac{\\alpha}{2}\\right):b_{4},p_{10}\\right\\}+t\\left\\{\\cos\\left(\\frac{\\alpha}{2}\\right)+\\sin\\left(\\frac{\\alpha}{2}\\right)-h\\ge\\sec\\left(\\frac{\\alpha}{2}\\right):p_{10},\\left\\{\\sin\\left(\\frac{\\alpha}{2}\\right)\\le\\cos\\left(\\frac{\\alpha}{2}\\right):b_{4},p_{11}\\right\\}\\right\\}"
+            },
+            {
+                "type": "expression",
+                "id": "532",
+                "folderId": "365",
+                "color": "#000000",
+                "latex": "\\left(1-t\\right)\\left\\{\\cos\\left(\\frac{\\alpha}{2}\\right)+\\sin\\left(\\frac{\\alpha}{2}\\right)-h\\ge\\sec\\left(\\frac{\\alpha}{2}\\right):p_{10},\\left\\{\\sin\\left(\\frac{\\alpha}{2}\\right)\\le\\cos\\left(\\frac{\\alpha}{2}\\right):b_{4},p_{11}\\right\\}\\right\\}+t\\left\\{\\sin\\left(\\frac{\\alpha}{2}\\right)\\le\\cos\\left(\\frac{\\alpha}{2}\\right):p_{11},b_{4}\\right\\}"
+            },
+            {
+                "type": "expression",
+                "id": "533",
+                "folderId": "365",
+                "color": "#000000",
+                "latex": "\\left(1-t\\right)\\left\\{\\sin\\left(\\frac{\\alpha}{2}\\right)\\le\\cos\\left(\\frac{\\alpha}{2}\\right):p_{11},b_{4}\\right\\}+t\\left\\{\\cos\\left(\\frac{\\alpha}{2}\\right)-\\sin\\left(\\frac{\\alpha}{2}\\right)\\le2h:p_{12},b_{1}\\right\\}"
+            },
+            {
+                "type": "expression",
+                "id": "535",
+                "folderId": "365",
+                "color": "#000000",
+                "latex": "\\left(1-t\\right)\\left\\{\\cos\\left(\\frac{\\alpha}{2}\\right)-\\sin\\left(\\frac{\\alpha}{2}\\right)\\le2h:p_{12},b_{1}\\right\\}+t\\left\\{\\cos\\left(\\frac{\\alpha}{2}\\right)-\\sin\\left(\\frac{\\alpha}{2}\\right)\\le2h:\\left\\{\\frac{\\pi}{2}\\le\\alpha\\le\\pi:\\ p_{13},\\ b_{1}\\right\\},p_{12}\\right\\}"
+            },
+            {
+                "type": "expression",
+                "id": "537",
+                "folderId": "365",
+                "color": "#000000",
+                "latex": "\\left(1-t\\right)\\left\\{\\cos\\left(\\frac{\\alpha}{2}\\right)-\\sin\\left(\\frac{\\alpha}{2}\\right)\\le2h:\\left\\{\\frac{\\pi}{2}\\le\\alpha\\le\\pi:\\ p_{13},\\ b_{1}\\right\\},p_{12}\\right\\}+t\\left\\{\\frac{\\pi}{2}\\le\\alpha\\le\\pi:b_{1},p_{13}\\right\\}"
+            },
+            {
+                "type": "folder",
+                "id": "349",
+                "title": "alpha indicator",
+                "collapsed": true
+            },
+            {
+                "type": "expression",
+                "id": "350",
+                "folderId": "349",
+                "color": "#6042a6",
+                "latex": "\\alpha_{dispOffset}\\left(\\cos\\left(t\\right),\\sin\\left(t\\right)\\right)+\\left(\\frac{1}{2},\\frac{1}{2}\\right)",
+                "parametricDomain": {
+                    "min": "\\frac{\\pi}{2}-\\frac{\\alpha}{2}",
+                    "max": "\\frac{\\pi}{2}+\\frac{\\alpha}{2}"
+                },
+                "domain": {
+                    "min": "\\frac{\\pi}{2}-\\frac{\\alpha}{2}",
+                    "max": "\\frac{\\pi}{2}+\\frac{\\alpha}{2}"
+                }
+            },
+            {
+                "type": "expression",
+                "id": "360",
+                "folderId": "349",
+                "color": "#388c46",
+                "latex": "\\alpha_{deg}=\\operatorname{round}\\left(\\frac{180}{\\pi}\\alpha,2\\right)"
+            },
+            {
+                "type": "expression",
+                "id": "359",
+                "folderId": "349",
+                "color": "#6042a6",
+                "latex": "\\left(\\frac{1}{2},\\frac{1}{2}+\\alpha_{dispOffset}\\right)",
+                "showLabel": true,
+                "label": "`\\ \\alpha=${\\alpha_{deg}}^{∘}`",
+                "hidden": true,
+                "labelOrientation": "above"
+            },
+            {
+                "type": "expression",
+                "id": "551",
+                "folderId": "349",
+                "color": "#2d70b3",
+                "latex": "\\alpha_{dispOffset}=\\max\\left(0.067\\cot\\left(\\frac{\\alpha}{2}\\right),0.09\\right)"
+            },
+            {
+                "type": "folder",
+                "id": "609",
+                "title": "faces",
+                "hidden": true,
+                "collapsed": true
+            },
+            {
+                "type": "text",
+                "id": "659",
+                "folderId": "609",
+                "text": "default faces:"
+            },
+            {
+                "type": "expression",
+                "id": "662",
+                "folderId": "609",
+                "color": "#c74440",
+                "latex": "\\operatorname{polygon}\\left(p_{3},p_{5},p_{2}\\right)"
+            },
+            {
+                "type": "expression",
+                "id": "664",
+                "folderId": "609",
+                "color": "#388c46",
+                "latex": "\\operatorname{polygon}\\left(p_{3},p_{4},p_{5}\\right)"
+            },
+            {
+                "type": "expression",
+                "id": "665",
+                "folderId": "609",
+                "color": "#6042a6",
+                "latex": "\\operatorname{polygon}\\left(p_{1},p_{2},p_{5}\\right)"
+            },
+            {
+                "type": "text",
+                "id": "655",
+                "folderId": "609",
+                "text": "faces predicated on conditions:"
+            },
+            {
+                "type": "expression",
+                "id": "610",
+                "folderId": "609",
+                "color": "#388c46",
+                "latex": "\\left\\{\\alpha\\le\\frac{\\pi}{2}:\\operatorname{polygon}\\left(p_{5},p_{6},p_{13}\\right),\\operatorname{polygon}\\left(p_{5},p_{6},b_{2},b_{1},p_{13}\\right)\\right\\}"
+            },
+            {
+                "type": "expression",
+                "id": "624",
+                "folderId": "609",
+                "color": "#2d70b3",
+                "latex": "\\left[\\operatorname{polygon}\\left(p_{4},p_{7},p_{6},p_{5}\\right),\\operatorname{polygon}\\left(p_{4},p_{7},b_{2},p_{6},p_{5}\\right)\\right]\\left[\\left\\{\\alpha\\le\\frac{\\pi}{2}:\\left\\{\\cos\\left(\\frac{\\alpha}{2}\\right)-\\sin\\left(\\frac{\\alpha}{2}\\right)\\le2h:2,1\\right\\},1\\right\\}\\right]"
+            },
+            {
+                "type": "expression",
+                "id": "625",
+                "folderId": "609",
+                "color": "#388c46",
+                "latex": "\\left[\\operatorname{polygon}\\left(p_{5},p_{13},p_{12},p_{1}\\right),\\operatorname{polygon}\\left(p_{5},p_{13},b_{1},p_{12},p_{1}\\right)\\right]\\left[\\left\\{\\frac{\\pi}{2}\\le\\alpha:1,\\left\\{\\cos\\left(\\frac{\\alpha}{2}\\right)-\\sin\\left(\\frac{\\alpha}{2}\\right)\\le2h:2,1\\right\\}\\right\\}\\right]"
+            },
+            {
+                "type": "expression",
+                "id": "628",
+                "folderId": "609",
+                "color": "#c74440",
+                "latex": "\\left[\\operatorname{polygon}\\left(p_{4},p_{8},b_{2},p_{7}\\right),\\operatorname{polygon}\\left(p_{4},p_{8},p_{7}\\right),\\operatorname{polygon}\\left(p_{4},p_{8},b_{3},p_{7}\\right)\\right]\\left[\\left\\{\\alpha\\le\\frac{\\pi}{2}:\\left\\{\\cos\\left(\\frac{\\alpha}{2}\\right)-\\sin\\left(\\frac{\\alpha}{2}\\right)\\le2h:2,1\\right\\},3\\right\\}\\right]"
+            },
+            {
+                "type": "expression",
+                "id": "638",
+                "folderId": "609",
+                "color": "#6042a6",
+                "latex": "\\left[\\operatorname{polygon}\\left(p_{1},p_{12},b_{1},p_{11}\\right),\\operatorname{polygon}\\left(p_{1},p_{12},p_{11}\\right),\\operatorname{polygon}\\left(p_{1},p_{12},b_{4},p_{11}\\right)\\right]\\left[\\left\\{\\alpha\\le\\frac{\\pi}{2}:\\left\\{\\cos\\left(\\frac{\\alpha}{2}\\right)-\\sin\\left(\\frac{\\alpha}{2}\\right)\\le2h:2,1\\right\\},3\\right\\}\\right]"
+            },
+            {
+                "type": "expression",
+                "id": "643",
+                "folderId": "609",
+                "color": "#6042a6",
+                "latex": "\\left[\\operatorname{polygon}\\left(p_{8},p_{4},p_{3},p_{9}\\right),\\operatorname{polygon}\\left(p_{4},p_{3},p_{9},b_{3},p_{8}\\right)\\right]\\left[\\left\\{\\alpha\\le\\frac{\\pi}{2}:\\left\\{\\cos\\left(\\frac{\\alpha}{2}\\right)+\\sin\\left(\\frac{\\alpha}{2}\\right)-h\\ge\\sec\\left(\\frac{\\alpha}{2}\\right):1,2\\right\\},1\\right\\}\\right]"
+            },
+            {
+                "type": "expression",
+                "id": "653",
+                "folderId": "609",
+                "color": "#6042a6",
+                "latex": "\\left[\\operatorname{polygon}\\left(p_{1},p_{11},p_{10},p_{2}\\right),\\operatorname{polygon}\\left(p_{1},p_{11},b_{4},p_{10},p_{2}\\right)\\right]\\left[\\left\\{\\alpha\\le\\frac{\\pi}{2}:\\left\\{\\cos\\left(\\frac{\\alpha}{2}\\right)+\\sin\\left(\\frac{\\alpha}{2}\\right)-h\\ge\\sec\\left(\\frac{\\alpha}{2}\\right):1,2\\right\\},1\\right\\}\\right]"
+            },
+            {
+                "type": "expression",
+                "id": "671",
+                "folderId": "609",
+                "color": "#000000",
+                "latex": "\\left[\\operatorname{polygon}\\left(p_{2},p_{10},b_{4},b_{3},p_{9},p_{3}\\right),\\operatorname{polygon}\\left(p_{2},p_{10},p_{9},p_{3}\\right)\\right]\\left[\\left\\{\\cos\\left(\\frac{\\alpha}{2}\\right)+\\sin\\left(\\frac{\\alpha}{2}\\right)-h\\ge\\sec\\left(\\frac{\\alpha}{2}\\right):1,2\\right\\}\\right]"
+            }
+        ]
+    },
+    "includeFunctionParametersInRandomSeed": true,
+    "doNotMigrateMovablePointStyle": true
+}
